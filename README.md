@@ -1,23 +1,15 @@
-git clone https://github.com/user/style-repo.git
-cd style-repo
+Автор: Китаева Вариант: Дата сдачи: 04.05.2026
 
-# Создаём ветку style и переключаемся на неё
-git checkout -b style
+Описание программы
+Кратко: что делает программа, зачем она нужна, какие проблемы решает.
 
-# Создаём файл .gitignore с содержимым *.log
-echo "*.log" > .gitignore
+"Weather Diary — это консольное приложение для ведения дневника погоды. Позволяет добавлять записи о температуре, осадках, фильтровать их по дате и строить графики температуры."
 
-# Добавляем файл в индекс
-git add .gitignore
+Требования для запуска
+Что нужно установить на компьютер:
 
-# Коммитим с понятным сообщением
-git commit -m "Add .gitignore to ignore *.log files"
-
-# Синхронизация: получаем изменения из удалённого репозитория
-git pull origin style --rebase  # или просто git pull, но для новой ветки лучше явно
-
-# Если pull не требуется (ветка новая), просто пушим
-git push -u origin style
-
-# В Visual Studio: Team Explorer → Branches → выбрать ветку style → Push
-# Затем Team Explorer → Pull Requests → Create Pull Request → style → main → Create
+С#
+GitHub
+Как запустить
+git clone https://github.com/log/weather-diary.git
+cd weather-diary
